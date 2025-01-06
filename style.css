@@ -1,0 +1,102 @@
+/* style.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+/* Navbar Styles */
+.navbar {
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    color: #495057;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+/* Form Styles */
+form {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #e9ecef;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #80bdff;
+    background-color: #fdfdfd;
+}
+
+/* Labels */
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Checkboxes and Radios */
+form input[type="checkbox"],
+form input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Button Styles */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #343a40;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
