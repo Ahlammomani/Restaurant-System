@@ -1,102 +1,105 @@
-/* style.css */
-
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
-    color: #343a40;
 }
 
-/* Navbar Styles */
+/* Navbar */
 .navbar {
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #6c757d;
+    padding: 1rem;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .nav-link {
-    color: #495057;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
+    color: white;
+    margin-left: 15px;
 }
 
 .nav-link:hover {
-    color: #007bff;
+    color: #ffc107;
+}
+
+.nav-link.active {
+    color: #ffc107;
 }
 
 /* Form Styles */
 form {
-    width: 80%;
-    max-width: 500px;
-    margin: 0 auto 20px auto;
+    background-color: white;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
     border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
 }
 
-form input[type="text"],
-form input[type="number"],
-form input[type="date"] {
+form input,
+form button {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
+    margin: 8px 0;
     border: 1px solid #ced4da;
-    border-radius: 5px;
+    border-radius: 4px;
     font-size: 1rem;
-    background-color: #e9ecef;
 }
 
-form input:focus {
+form input:focus,
+form button:focus {
     outline: none;
-    border-color: #80bdff;
-    background-color: #fdfdfd;
+    border-color: #6c757d;
 }
 
-/* Labels */
-form label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-}
-
-/* Checkboxes and Radios */
-form input[type="checkbox"],
-form input[type="radio"] {
-    margin-right: 10px;
-}
-
-/* Button Styles */
-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #007bff;
+form button {
+    background-color: #6c757d;
+    color: white;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #0056b3;
+form button:hover {
+    background-color: #5a6268;
 }
 
-/* Footer Styles */
+/* Cards */
+.card {
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
 footer {
+    background-color: #6c757d;
+    color: white;
     text-align: center;
     padding: 10px;
-    background-color: #343a40;
-    color: #fff;
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    font-size: 0.9rem;
-}
-
-footer p {
-    margin: 0;
 }
